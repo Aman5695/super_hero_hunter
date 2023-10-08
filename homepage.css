@@ -1,0 +1,178 @@
+body{
+    font-family: cursive;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.superheroes-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.superhero-card{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.superhero-card img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.superhero-card p{
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.superhero-card h3{
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+input{
+    padding: 15px;
+    font: 16px;
+    width: 50%;
+    border-radius: 15px;
+}
+
+#search-list{
+    width: 54%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 5px #cbc2c2;
+}
+
+.filtered-result-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #c9c1c1;
+    margin: 5px;
+}
+
+.filtered-superhero-detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filtered-superhero-image{
+    min-width: 77px;
+    max-height: 70px;
+    border-radius: 50%;
+}
+
+.filtered-superhero-name{
+    margin-left: 20px;
+}
+
+.search-list-container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #2b2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header h1{
+    color: white;
+    padding: 10px;
+    margin: 0 0;
+    text-align: center;
+}
+
+header a{
+    color:white;
+    float:right;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.add-to-favorites{
+    padding: 5px 5px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #22ff22;
+    border: none;
+    color: white;
+    margin: 10px 5px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.remove-favorites{
+    padding: 5px 5px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgb(248, 33, 33);
+    border: none;
+    color: white;
+    margin: 10px 5px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.filtered-superhero-name{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.superhero-name{
+    &:hover{
+        cursor: pointer;
+        color: grey;
+    }
+}
+
+#nextPage{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#prevPage{
+    &:hover{
+        cursor: pointer;
+    }
+}

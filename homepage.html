@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero Hunter</title>
+    <!-- Integerate css file here -->
+    <link rel="stylesheet" href="./homepage.css">
+</head>
+<body>
+    <!-- Header of the website -->
+    <header>
+        <h1><a href="./homepage.html">SuperHero Hunter</a></h1>
+        <a href="./files/favorities.html">Checkout Favorites</a>
+    </header>
+    <div class="container">
+        <h1>Superheroes</h1>
+        <!-- search-list-container contain input field and search list -->
+        <div class="search-list-container">
+            <input type="text" id="searchBar" placeholder="Search by name...">
+            <div id="search-list"></div>
+        </div>
+        <!-- superheroes-container contain all the superhero cards -->
+        <div id="superheroes" class="superheroes-container"></div>
+        <!-- pagination contains the pagination on homepage 20 records on everypage -->
+        <div class="pagination">
+            <button id="prevPage">Previous</button>
+            <span id="currentPage">Page 1</span>
+            <button id="nextPage">Next</button>
+        </div>
+    </div>
+    <!-- Integerate Javscript Logic here -->
+    <script src="./homepage.js"></script>
+</body>
+</html>

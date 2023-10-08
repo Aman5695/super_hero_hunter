@@ -1,0 +1,67 @@
+body{
+    font-family: cursive;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #2b2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header h1{
+    color: white;
+    padding: 10px;
+    margin: 0 0;
+    text-align: center;
+}
+
+header a{
+    color:white;
+    float:right;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.superhero-card{
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.superhero-card img{
+    max-width: 100%;
+    height: auto;
+}
+
+.superhero-card h3{
+    margin-top: 10px;
+}
+
+.remove-from-favorites{
+    background-color: #ff6961;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    &:hover{
+        background-color: #d90000;
+    }
+}
+
+.heading{
+    margin-top: 80px;
+    text-align: center;
+}
